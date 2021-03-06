@@ -4,7 +4,7 @@
   "description": "Back-end API and Server for BOOZEBROS online shop.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend/issues"
   },
-  "homepage": "https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend#readme"
+  "homepage": "https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
