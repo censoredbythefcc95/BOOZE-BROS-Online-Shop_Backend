@@ -2,9 +2,9 @@
   "name": "booze-bros-online-shop_backend",
   "version": "1.0.0",
   "description": "Back-end API and Server for BOOZEBROS online shop.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server"
+    "start": "nodemon server"
   },
   "repository": {
     "type": "git",
