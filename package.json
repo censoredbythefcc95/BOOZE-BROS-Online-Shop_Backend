@@ -1,0 +1,19 @@
+{
+  "name": "booze-bros-online-shop_backend",
+  "version": "1.0.0",
+  "description": "Back-end API and Server for BOOZEBROS online shop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend.git"
+  },
+  "author": "Steven Astudillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend/issues"
+  },
+  "homepage": "https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend#readme"
+}
