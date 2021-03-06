@@ -13,3 +13,8 @@ app.get('/' , (req, res) => {
 app.get('/drinks', (req, res) => {
     res.json(drinks)
 });
+
+app.get('/drinks/:id', (req, res) => {
+    const drink = drinks.find(p => p._id === req.params.id)
+    res.json(drink)
+});
