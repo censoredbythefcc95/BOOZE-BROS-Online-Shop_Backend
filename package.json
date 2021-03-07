@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/censoredbythefcc95/BOOZE-BROS-Online-Shop_Backend#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   }
 }

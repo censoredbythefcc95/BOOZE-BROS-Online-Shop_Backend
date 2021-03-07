@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv');
 const drinks = require('./data_array/alcohol');
+const PORT = process.env.PORT || 3001
 
-app.listen(3000, console.log('Server is running on port 3000'));
+dotenv.config();
+app.listen(PORT, console.log(`Express server running on port ${PORT}`));
 
 // Primary Routes
 
