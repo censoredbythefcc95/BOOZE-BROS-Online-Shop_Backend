@@ -17,7 +17,7 @@ const newOrderSchema = mongoose.Schema(
                     required: true
                 },
                 image: {
-                    type: String
+                    type: String,
                     required: true
                 },
                 drink: {
@@ -27,7 +27,7 @@ const newOrderSchema = mongoose.Schema(
                 price: {
                     type: Number,
                     required: true
-                },
+                }
             }
         ]
     }
