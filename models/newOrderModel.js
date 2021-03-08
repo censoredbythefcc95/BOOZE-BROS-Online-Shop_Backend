@@ -5,6 +5,7 @@ const newOrderSchema = mongoose.Schema(
         user: {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
+            ref: "Customer"
         },
         orderDrinks: [
             {
@@ -22,13 +23,32 @@ const newOrderSchema = mongoose.Schema(
                 },
                 drink: {
                     type: mongoose.Schema.Types.ObjectId,
-                    required: true
+                    required: true,
+                    ref: "Drink"
                 },
                 price: {
                     type: Number,
                     required: true
                 }
             }
-        ]
+        ],
+        address: {
+            main_address: {
+                type: String,
+                required: true
+            },
+            city: {
+                type: String,
+                required: true
+            },
+            zipCode: {
+                type: String,
+                required: true
+            },
+            country: {
+                type: String,
+                required: true
+            }
+        },
     }
 )
