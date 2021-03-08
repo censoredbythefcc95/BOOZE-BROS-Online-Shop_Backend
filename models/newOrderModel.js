@@ -50,5 +50,23 @@ const newOrderSchema = mongoose.Schema(
                 required: true
             }
         },
+        customerPayment: {
+            type: String,
+            required: true
+        },
+        customerPaymentResult: {
+            id: {
+                type: String
+            },
+            status: {
+                type: String
+            },
+            time: {
+                type: String
+            },
+            email_address: {
+                type: String
+            }
+        },
     }
 )
