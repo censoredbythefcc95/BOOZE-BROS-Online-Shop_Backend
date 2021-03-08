@@ -2,6 +2,11 @@ const mongoose = require("mongoose");
 
 const drinkSchema = mongoose.Schema(
     {
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: "Customer"
+        },
         name: {
             type: String,
             required: true,
@@ -27,6 +32,7 @@ const drinkSchema = mongoose.Schema(
             required: true,
             default: 0
         },
+        reviews: [customerReviewSchema],
         numReviews: {
             type: Number,
             required: true,
@@ -61,3 +67,7 @@ const customerReviewSchema = mongoose.Schema(
         }
     }
 )
+
+const Drink = mongoose.model("Drink", drinkSchema)
+
+module.exports = Drink,
