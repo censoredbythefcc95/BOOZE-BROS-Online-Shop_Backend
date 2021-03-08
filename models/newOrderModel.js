@@ -50,6 +50,7 @@ const newOrderSchema = mongoose.Schema(
                 required: true
             }
         },
+        // payment information schema
         customerPayment: {
             type: String,
             required: true
@@ -68,5 +69,41 @@ const newOrderSchema = mongoose.Schema(
                 type: String
             }
         },
+        // price information and boolean for order pick-up.
+        taxPrice: {
+            type: Number,
+            required: true,
+            default: 0.0
+        },
+        servicePrice: {
+            type: Number,
+            required: true,
+            default: 0.0
+        },
+        grandTotalPrice: {
+            type: Number,
+            required: true,
+            default: 0.0
+        },
+        paidStatus: {
+            type: Boolean,
+            required: true,
+            default: true
+        },
+        paidOn: {
+            type: Date
+        },
+        isPickedUp: {
+            type: Boolean,
+            required: true,
+            default: false
+        },
+        pickedUpDate: {
+            type: Date
+        }
     }
 )
+
+const newOrder = mongoose.model("newOrder", newOrderSchema)
+
+module.exports = newOrder;
