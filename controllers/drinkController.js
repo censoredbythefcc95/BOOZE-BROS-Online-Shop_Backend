@@ -1,6 +1,9 @@
 const express = require('express');
 const drinks = require('../data_array/alcohol');
 const router = express.Router();
+const expressAsyncHandler = require('express-async-handler');
+// I found this npm tool that handles async errors automaticially.
+// It handles async errors without having to wrap each route in try {} ..
 const Drink = require('../models/drinkModel')
 
 router.get('/', async (req, res) => {
