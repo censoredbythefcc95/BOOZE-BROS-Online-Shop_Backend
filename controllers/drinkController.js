@@ -6,10 +6,10 @@ const expressAsyncHandler = require('express-async-handler');
 // It handles async errors without having to wrap each route in try {} ..
 const Drink = require('../models/drinkModel')
 
-router.get('/', async (req, res) => {
+router.get('/', expressAsyncHandler (async (req, res) => {
     const drinks = await Drink.find({})
     res.json(drinks)
-});
+})); //to use async handler you have to wrap the route in the handler function like this.
 
 router.get('/:id', (req, res) => {
     const drink = drinks.find((p) => p._id === req.params._id)
