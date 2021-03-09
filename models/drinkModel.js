@@ -1,5 +1,22 @@
 const mongoose = require("mongoose");
 
+const customerReviewSchema = mongoose.Schema(
+    {
+        name: {
+            type: String,
+            required: true
+        },
+        rating: {
+            type: Number,
+            required: true
+        },
+        comments: {
+            type: String,
+            required: true
+        }
+    }
+)
+
 const drinkSchema = mongoose.Schema(
     {
         user: {
@@ -51,23 +68,7 @@ const drinkSchema = mongoose.Schema(
     }
 )
 
-const customerReviewSchema = mongoose.Schema(
-    {
-        name: {
-            type: String,
-            required: true
-        },
-        rating: {
-            type: Number,
-            required: true
-        },
-        comments: {
-            type: String,
-            required: true
-        }
-    }
-)
 
 const Drink = mongoose.model("Drink", drinkSchema)
 
-module.exports = Drink,
+module.exports = Drink;
