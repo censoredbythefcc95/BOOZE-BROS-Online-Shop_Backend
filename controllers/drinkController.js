@@ -11,7 +11,7 @@ router.get('/', expressAsyncHandler(async (req, res) => {
     res.json(drinks)
 })); //to use async handler you have to wrap the route in the handler function like this.
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', expressAsyncHandler(async (req, res) => {
     const drink = await Drink.findById(req.params.id)
 
     if(drink) {
@@ -20,6 +20,6 @@ router.get('/:id', async (req, res) => {
         res.status(404).json({ message: 'Drink not found.'})
     }
    
-});
+}));
 
 module.exports = router;
