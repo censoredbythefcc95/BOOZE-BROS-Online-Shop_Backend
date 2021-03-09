@@ -1,6 +1,5 @@
 const drinks = [
     {
-    _id: '1',
     name: 'Grey Goose Vodka',
     description: 'A vodka from Russia? Enjoy.',
     brand: 'Grey Goose',
@@ -12,7 +11,6 @@ const drinks = [
     image: '/images/greygoose.jpg',
 },
 {
-    _id: '2',
     name: 'Black Label',
     description: 'The expensive stuff. Time to get lit',
     brand: 'Johnnie Walker',
@@ -24,7 +22,6 @@ const drinks = [
     image: '/images/blacklabel.jpg',
 },
 {
-    _id: '3',
     name: 'Fireball',
     description: 'For the hipsters out of Brooklyn. Enjoy.',
     brand: 'Fireball',
@@ -36,7 +33,6 @@ const drinks = [
     image: '/images/fireball.jpg',
 },
 {
-    _id: '4',
     name: 'Canned Bread',
     description: 'Squidward loves this stuff.',
     brand: 'Tentacle Acres',
@@ -48,7 +44,6 @@ const drinks = [
     image: '/images/cannedbread.jpg',
 },
 {
-    _id: '5',
     name: 'Bloxy Cola',
     description: 'Quench your thirst. Roblox players only.',
     brand: 'Roblox',
@@ -60,7 +55,6 @@ const drinks = [
     image: '/images/bloxycola.jpg',
 },
 {
-    _id: '6',
     name: 'Chilean Cabernet',
     description: 'Cabernet wine from Chile.',
     brand: 'Gato Negro',
