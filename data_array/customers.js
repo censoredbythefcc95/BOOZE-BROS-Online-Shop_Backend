@@ -1,19 +1,21 @@
+const bcrypt = require('bcryptjs');
+
 const customers = [
     {
         name: "Steve Young",
         email: "steve@steve.com",
-        password: "admin2021",
+        password: bcrypt.hashSync("admin2021", 10),
         adminPrivilege: true
     },
     {
         name: "Squidward Tentacles",
         email: "squidward@acre.com",
-        password: "clarinet"
+        password: bcrypt.hashSync("clarinet", 10),
     },
     {
         name: "Keyzer Soze",
         email: "comefindme@123.com",
-        password: "usualsuspect"
+        password: bcrypt.hashSync("usualsuspect", 10),
     },
 ]
 
