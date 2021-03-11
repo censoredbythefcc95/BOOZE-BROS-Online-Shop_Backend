@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const bcrypt = require('bcryptjs');
 
 const customerSchema = mongoose.Schema(
     {
@@ -22,6 +23,10 @@ const customerSchema = mongoose.Schema(
         }
     }
 )
+
+customerSchema.methods.matchPassword = async function(enteredPassword) {
+
+}
 
 const Customer = mongoose.model("Customer", customerSchema)
 
