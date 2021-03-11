@@ -25,7 +25,7 @@ const customerSchema = mongoose.Schema(
 )
 
 customerSchema.methods.matchPassword = async function(enteredPassword) {
-
+    return await bcrypt.compare(enteredPassword, this.password)
 }
 
 const Customer = mongoose.model("Customer", customerSchema)
